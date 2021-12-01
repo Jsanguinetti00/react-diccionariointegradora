@@ -1,0 +1,34 @@
+.inicio__container-cards {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 200px !important;
+    margin-top: 200px !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.inicio__h1 {
+    color: rgb(101, 73, 221);
+    font-size: 30pt !important;
+}
+
+.inicio__h4 {
+    color: rgb(101, 73, 221);
+    font-size: 20pt !important;
+}
+
+.inicio__p {
+    color: rgb(101, 73, 221);
+    font-size: 10pt !important;
+}
+.containerHome {
+    max-width: 100% !important;
+    margin-left: 200px !important;
+    margin-right: 200px !important;
+}
+.inicio__img {
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    position: relative !important;
+    height: 400px !important;
+    width: 400px !important;
+}

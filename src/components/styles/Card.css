@@ -1,0 +1,26 @@
+.cardInfo {
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+    padding: 5px;
+  }
+  
+  .cardInfo * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .badge {
+    border-radius: 5px;
+    padding: 2px 8px;
+  }
+  .badge.bg-primary {
+    background-color: royalblue;
+    color: white;
+  }
+  .badge.bg-secondary {
+    color: white;
+    background: seagreen;
+  }
+  

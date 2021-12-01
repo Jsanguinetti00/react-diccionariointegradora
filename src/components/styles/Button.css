@@ -1,0 +1,23 @@
+.styleButton {
+    background: linear-gradient(70deg, rgb(194, 113, 237), rgb(101, 73, 221));
+    border: none;
+    border-radius: 50pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    min-width: 200px;
+    text-align: center;
+    transition: ease-in-out .3s;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 30%);
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.styleButton:hover {
+    filter: brightness(125%);
+}
+
+.styleButton:active{
+    transform: scale(.95);
+}
