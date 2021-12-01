@@ -16,7 +16,6 @@ const Header = () => {
                 <Navbar.Brand ><Link to="/">Inicio</Link></Navbar.Brand>
                 <Nav className="me-auto navbar_wrapper">
                 <Link to="/login">Login</Link>
-                <Link to="/register">Register</Link>
                 <Link to="/diccionario">Diccionario</Link>
                 <Link to="/comentarios">comentarios</Link>
                 </Nav>
