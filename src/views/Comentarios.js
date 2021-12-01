@@ -37,7 +37,7 @@ const Comentarios = () => {
         }
     });
     useEffect( ()=>{
-        axios.get(`http://127.0.0.1:8000/api/opinion`)
+        axios.get(`https://apirestdiccionario.herokuapp.com/api/opinion`)
         .then( response => {
             console.log(response.data);
 
@@ -48,7 +48,7 @@ const Comentarios = () => {
     },[])
     
     const handlePrevComments =()=>{
-        axios.get(`http://127.0.0.1:8000/api/opinion`)
+        axios.get(`https://apirestdiccionario.herokuapp.com/api/opinion`)
         .then( response => {
             console.log(response.data);
 
@@ -70,7 +70,7 @@ const Comentarios = () => {
         e.preventDefault();
         
         form.current.validateAll();
-        axios.post('http://127.0.0.1:8000/api/opinion',{
+        axios.post('https://apirestdiccionario.herokuapp.com/api/opinion',{
                 puntuacion:userPuntuacion,
                 comentario:userComentario,
                 usuario_id:idUser,

@@ -114,7 +114,7 @@ export const Register = (props) => {
         if(password != cpassword){
             return setMessage("Las contraseñas no coinciden, revisa nuevamente");
         }else{
-            axios.post('http://127.0.0.1:8000/api/signup',{
+            axios.post('https://apirestdiccionario.herokuapp.com/api/signup',{
                 firstname: firstname,
                 lastname:lastname,
                 username,username,
