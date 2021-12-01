@@ -105,7 +105,7 @@ export const Register = (props) => {
 
     
 
-    const handleRegister = async (e)=>{
+    const handleRegister = (e)=>{
         e.preventDefault();
         setMessage("");
         setSuccessful(false);
@@ -114,7 +114,7 @@ export const Register = (props) => {
         if(password != cpassword){
             return setMessage("Las contraseñas no coinciden, revisa nuevamente");
         }else{
-            axios.post('https://apirestdiccionario.herokuapp.com/api/signup',{
+            axios.post('http://127.0.0.1:8000/api/signup',{
                 firstname: firstname,
                 lastname:lastname,
                 username,username,
@@ -122,14 +122,13 @@ export const Register = (props) => {
                 password:password,
                 cpassword:cpassword,
                 headers:{
-                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8;application/json',
                     "Access-Control-Allow-Origin": "*",
                     "X-Requested-With":'XMLHttpRequest'
                 }
               }).then(function (response) {
                 console.log(response.data);
                 localStorage.setItem("user-info", JSON.stringify(response.data));
-                navigate('/comentarios');
                 setMessage("Usuario Creado con exito");
                 setSuccessful(true);
               })

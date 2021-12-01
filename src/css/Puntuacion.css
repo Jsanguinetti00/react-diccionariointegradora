@@ -1,0 +1,31 @@
+.clasificacion label{ 
+    color:grey;
+}
+input[type = "radio"]{ 
+    display:none;
+}
+.clasificacion{
+    direction: rtl !important; /* right to left */
+    unicode-bidi: bidi-override !important;/* bidi de bidireccional */
+}
+.clasificacion label:hover{
+    color:orange;
+}
+.clasificacion label:hover ~ label{
+    color:orange;
+}
+input[type = "radio"]:checked ~ label{
+    color:orange;
+}
+.clasificacion p {
+    text-align: center;
+}
+  
+.clasificacion label {
+    font-size: 50px;
+    display:inline-block;
+    margin:10px;
+}
+.card-comentario{
+    max-width: 700px !important;
+}

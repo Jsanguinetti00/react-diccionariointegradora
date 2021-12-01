@@ -41,10 +41,10 @@ const Login = (props) => {
         setRemember(!remember_me);
         console.log(remember_me);
     }
-    const handleOnSubmit = async (e)=>{
+    const handleOnSubmit = (e)=>{
         e.preventDefault();
         form.current.validateAll();
-        axios.post('https://apirestdiccionario.herokuapp.com/api/login',{
+        axios.post('http://127.0.0.1:8000/api/login',{
                 email:emailUser,
                 password:password,
                 headers:{
@@ -115,7 +115,7 @@ const Login = (props) => {
                         </div>
                     )}
                     <CheckButton style={{ display: "none" }} ref={checkBtn} />
-                    <p>Ya tienes una cuenta? <Link to="/register">Registrate</Link></p>
+                    <p>Aún no tienes una cuenta? <Link to="/register">Registrate</Link></p>
                 </Form>
             </div>
         </div>

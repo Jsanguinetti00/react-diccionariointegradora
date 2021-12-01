@@ -15,7 +15,11 @@ const Header = () => {
             <Navbar bg="black"  className="navbar_wrapper" variant="dark">
                 <Navbar.Brand ><Link to="/">Inicio</Link></Navbar.Brand>
                 <Nav className="me-auto navbar_wrapper">
-                <Link to="/login">Login</Link>
+                { localStorage.getItem('user-info')?
+                    null
+                    :<Link to="/login">Iniciar Sesion</Link>
+                }
+                
                 <Link to="/diccionario">Diccionario</Link>
                 <Link to="/comentarios">comentarios</Link>
                 </Nav>
