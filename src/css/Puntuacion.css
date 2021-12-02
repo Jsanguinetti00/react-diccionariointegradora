@@ -14,9 +14,10 @@ input[type = "radio"]{
 .clasificacion label:hover ~ label{
     color:orange;
 }
-input[type = "radio"]:checked ~ label{
+.clasificacion input[type = "radio"]:checked ~ label{
     color:orange;
 }
+
 .clasificacion p {
     text-align: center;
 }
@@ -28,4 +29,85 @@ input[type = "radio"]:checked ~ label{
 }
 .card-comentario{
     max-width: 700px !important;
+}
+/*  */
+.clasificacion2 label{ 
+    color:grey;
+}
+.clasificacion2{
+    direction: rtl !important; /* right to left */
+    unicode-bidi: bidi-override !important;/* bidi de bidireccional */
+}
+.clasificacion2 label:hover{
+    color:orange;
+}
+.clasificacion2 label:hover ~ label{
+    color:orange;
+}
+.clasificacion2 input[type = "radio"]:checked ~ label{
+    color:orange;
+}
+
+.clasificacion2 p {
+    text-align: center;
+}
+  
+.clasificacion2 label {
+    font-size: 50px;
+    display:inline-block;
+    margin:10px;
+}
+/*  */
+.clasificacion3 label{ 
+    color:grey;
+}
+.clasificacion3{
+    direction: rtl !important; /* right to left */
+    unicode-bidi: bidi-override !important;/* bidi de bidireccional */
+}
+.clasificacion3 label:hover{
+    color:orange;
+}
+.clasificacion3 label:hover ~ label{
+    color:orange;
+}
+.clasificacion3 input[type = "radio"]:checked ~ label{
+    color:orange;
+}
+
+.clasificacion3 p {
+    text-align: center;
+}
+  
+.clasificacion3 label {
+    font-size: 50px;
+    display:inline-block;
+    margin:10px;
+}
+/*  */
+.clasificacion4 label{ 
+    color:grey;
+}
+.clasificacion4{
+    direction: rtl !important; /* right to left */
+    unicode-bidi: bidi-override !important;/* bidi de bidireccional */
+}
+.clasificacion4 label:hover{
+    color:orange;
+}
+.clasificacion4 label:hover ~ label{
+    color:orange;
+}
+.clasificacion4 input[type = "radio"]:checked ~ label{
+    color:orange;
+}
+
+.clasificacion4 p {
+    text-align: center;
+}
+  
+.clasificacion4 label {
+    font-size: 50px;
+    display:inline-block;
+    margin:10px;
 }
